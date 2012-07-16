@@ -1,0 +1,15 @@
+#Readme
+#
+This is an event notification library adapted from Redis (http://redis.io/).
+The API provides a mechanism to execute a callback function when a specific 
+event occurs on a file descriptor or after a timeout has been reached. 
+#
+#
+#
+#
+#compile:
+gcc -o adv adv.c  ae.c  ae_epoll.c  anet.c  networking.c  sds.c  
+zmalloc.c -I/usr/local/google-perftools/include/ -L/usr/local/google-perftools/lib/ 
+-ltcmalloc -DHAVE_EPOLL -DUSE_TCMALLOC
+
+
